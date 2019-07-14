@@ -11,8 +11,9 @@
 			Pankaj Sah
 		</title>
         <link rel="stylesheet" type="text/css" href="stylemypage.css" >
+        <script src="javaquery.js" > </script>
 	</head>
-	<body><div id="home"> </div>
+	<body onload="$('#loading').fadeOut();">
            <div class="navbar navbar-expand-md bg-dark navbar-dark">
   <a class="navbar-brand navbar-dark" href="#" style="font-size: 25px;">PS</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -31,29 +32,44 @@
       </li> 
         <li class="nav-item">
         <a class="nav-link" href="qualifications.html">Qualification</a>
-      </li> 
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </li>
+
         <li class="nav-item">
         <a class="nav-link" href="contact.html">Contacts</a>
       </li> 
     </ul>
   </div>  
 </div>  
+        <div id="loading" class="loading" >
+        <img src="img/loader.gif" class="img">
+          <h2>LOADING...</h2>
+        
+        </div>
+        
+        <p class="nmbr"><i class="fa fa-mobile" style="font-size: 20px;"></i><a href="tel:+91 8218028139" style="color:darkblue">+91 8218028139</a></p>
+        
+        
+        
         <div class="profile" id="about"><h1 class="profile"><marquee behavior="slide" direction="down" scrollamount="3s"><b> <a href="contact.html" >Contacts</a></b></marquee></h1>
          </div>
-        <p class="nmbr"><i class="fa fa-mobile" style="font-size: 20px;"></i><a href="tel:+91 8218028139" style="color:darkblue">+91 8218028139</a></p>
-        <div class="mail"><a href=></a></div>
         <hr class="hori">
         <div class="container">
         <div class="row">
           <div class="col-sm-12">
             
-             <div class="msg"> <img class="env" src="env.png" >Send a message</div>
-        <textarea  placeholder="Message"></textarea><br>
-        <button class="btn btn-primary">Send</button>
+             <div class="msg"> <img class="env" src="env.png" >Send a message </div>
+       <div class="form-group">
+      <textarea class="form-control" rows="5"  id="message" placeholder="Type your message here..."></textarea>
+        </div><br>
+        <input type="button" class="btn btn-primary" id="send" value="Send" onclick="pankaj();">
             
-            </div> </div></div>
+         </div> </div></div>
           
-           <div class="media"  style="font-size: 40px; color: gray;text-shadow: 1px 1px 3px gray;margin-left: 100px;">Social Links </div>
+          
+           <div class="media"  style="font-size: 40px; color: gray;text-shadow: 1px 1px 3px gray;margin-left: 80px;">Social Links </div>
         
           
            <a href="https://www.facebook.com/profile.php?id=100028198984305" target="blank" class="social"><i class="fab fa-facebook-square" style="font-size: 30px;"></i></a>
@@ -65,9 +81,9 @@
           <a href= "https://www.linkedin.com/in/pankaj-sah-a25590152/" target="blank" class="social"><i class="fab fa-linkedin-in" style="font-size: 30px;"></i></a>
               <a href= "https://github.com/PankajSah" target="blank" class="social"><i class="fab fa-github" style="font-size: 30px;"></i></a>
               
-            
+           
          
-       
+
    
                 
         
